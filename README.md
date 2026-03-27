@@ -1,37 +1,47 @@
-# Food Delivery App 🍔
+🍔 Food Delivery App
 
-A production-ready React Native prototype for a Food Delivery app. 
-Built using **Expo**, **TypeScript**, **Zustand**, and **NativeWind** (Tailwind CSS for React Native).
+Aplicativo de delivery desenvolvido em React Native, pronto para uso como protótipo de produção.
+Construído com foco em performance, organização e escalabilidade.
 
-## 🚀 Technical Stack
-- **Framework:** Expo
-- **Language:** TypeScript
-- **State Management:** Zustand + AsyncStorage for data persistence
-- **Navigation:** React Navigation (Stack and Bottom Tabs)
-- **Styling:** NativeWind (Tailwind CSS v3)
+🚀 Tecnologias Utilizadas
+Framework: Expo
+Linguagem: TypeScript
+Gerenciamento de Estado: Zustand + AsyncStorage (persistência local)
+Navegação: React Navigation (Stack + Bottom Tabs)
+Estilização: NativeWind (Tailwind CSS para React Native)
+🔐 Acesso de Teste
 
-## 📁 Architecture
-- `/src/components` - Reusable UI widgets (`Button`, `Input`, `Card`)
-- `/src/navigation` - Handlers for `AuthStack` and `MainTabs`
-- `/src/store` - Global state setup with Zustand
-- `/src/screens` - Isolated app modules for Auth, Home, Cart, and Profile
-- `/src/utils` - Mock backend data
+Para facilitar a avaliação do app, utilize:
 
-## 💻 Running the App on Android (Local Emulator)
+📧 Email: teste@teste.com
+🔑 Senha: 123456
+📁 Estrutura do Projeto
+/src/components → Componentes reutilizáveis (Button, Input, Card)
+/src/navigation → Configuração de rotas (AuthStack e MainTabs)
+/src/store → Gerenciamento de estado global com Zustand
+/src/screens → Telas da aplicação (Auth, Home, Carrinho, Perfil)
+/src/utils → Dados mockados simulando backend
+💻 Como rodar o app no Android
 
-Assuming you have your Android environment (Android SDK, Emulator, Node.js) configured:
+Antes de iniciar, certifique-se de que você possui:
 
-1. **Install Dependencies**
-   ```bash
-   npm install
-   ```
+Android Studio configurado (SDK + Emulador)
+Node.js instalado
+1. Instalar dependências
+npm install
+2. Rodar o aplicativo
+npx expo run:android
 
-2. **Run the Application**
-   ```bash
-   npx expo run:android
-   ```
-   *This command will build the app and install it on your running emulator or connected device.*
+👉 Esse comando irá:
 
-## 🤝 Known Setup Notes
-- Due to the usage of NativeWind v4, make sure the `babel.config.js` and `metro.config.js` remain intact as they use the `react-native-reanimated` plugin and NativeWind configs.
-- State is persisted automatically: logging in will persist across app reloads.
+Compilar o app
+Instalar automaticamente no emulador ou dispositivo conectado
+⚙️ Observações Importantes
+O projeto utiliza NativeWind, então mantenha intactos os arquivos:
+babel.config.js
+metro.config.js
+O estado da aplicação é persistido:
+Após login, os dados permanecem salvos mesmo ao reiniciar o app
+🎯 Objetivo
+
+Este projeto foi desenvolvido como base para aplicações reais de delivery, podendo ser facilmente adaptado para produção com integração a APIs e serviços externos.
